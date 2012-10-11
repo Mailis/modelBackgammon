@@ -1,0 +1,14 @@
+c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\checkers\checkrBLUE.xnb
+c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\checkers\checkrRED.xnb
+c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\BackGammonn.exe
+c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\BackGammonn.pdb
+c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\obj\x86\Debug\BackGammonn.exe
+c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\obj\x86\Debug\BackGammonn.pdb
+c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\score.xnb
+c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\nurk_all.xnb
+c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\nurk_ylal.xnb
+c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\board.xnb
+c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\button.xnb
+c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\roll.xnb
+C:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\obj\x86\Debug\BackGammonn.csprojResolveAssemblyReference.cache

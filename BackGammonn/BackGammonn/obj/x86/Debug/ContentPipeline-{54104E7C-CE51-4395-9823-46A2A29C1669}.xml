@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>score.spritefont</Source>
+      <Name>score</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\score.xnb</Output>
+      <Time>2012-10-07T18:45:37.2269969+03:00</Time>
+    </Item>
+    <Item>
+      <Source>board.png</Source>
+      <Name>board</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\board.xnb</Output>
+      <Time>2012-10-08T00:02:07.3243262+03:00</Time>
+    </Item>
+    <Item>
+      <Source>nurk_all.png</Source>
+      <Name>nurk_all</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\nurk_all.xnb</Output>
+      <Time>2012-10-08T00:06:35.4596626+03:00</Time>
+    </Item>
+    <Item>
+      <Source>nurk_ylal.png</Source>
+      <Name>nurk_ylal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\nurk_ylal.xnb</Output>
+      <Time>2012-10-08T00:06:35.4676631+03:00</Time>
+    </Item>
+    <Item>
+      <Source>checkers\checkrRED.png</Source>
+      <Name>checkers\checkrRED</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\checkers\checkrRED.xnb</Output>
+      <Time>2012-10-09T08:44:15.2855458+03:00</Time>
+    </Item>
+    <Item>
+      <Source>checkers\checkrBLUE.png</Source>
+      <Name>checkers\checkrBLUE</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\checkers\checkrBLUE.xnb</Output>
+      <Time>2012-10-09T08:48:35.0144015+03:00</Time>
+    </Item>
+    <Item>
+      <Source>button.png</Source>
+      <Name>button</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\button.xnb</Output>
+      <Time>2012-10-09T23:15:32.9435344+03:00</Time>
+    </Item>
+    <Item>
+      <Source>roll.png</Source>
+      <Name>roll</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\roll.xnb</Output>
+      <Time>2012-10-09T23:43:18.2967872+03:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <ContentProjectGUID>{54104E7C-CE51-4395-9823-46A2A29C1669}</ContentProjectGUID>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonnContent\</RootDirectory>
+      <LoggerRootDirectory>c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\</LoggerRootDirectory>
+      <IntermediateDirectory>c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2011-09-01T16:22:30+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2011-09-01T16:22:30+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2012-06-14T00:49:01.9933883+03:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>
