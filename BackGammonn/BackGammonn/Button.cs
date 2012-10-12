@@ -18,7 +18,7 @@ namespace BackGammonn
         protected SpriteBatch spriteBatch;
         protected MouseState mouse;
         protected MouseState oldMouse;
-        protected bool clicked = false;
+        public bool clicked = false;
         public string clickText = "Button was Clicked!";
 
         public Button(Texture2D texture, SpriteFont font, SpriteBatch sBatch)
@@ -29,6 +29,7 @@ namespace BackGammonn
             spriteBatch = sBatch;
         }
 
+        //nuputekst
         //public string Text
         //{
         //    get { return text; }
@@ -78,7 +79,7 @@ namespace BackGammonn
             {
                 spriteBatch.Draw(image,
                     location,
-                    Color.Red);
+                    Color.White);
             }
 
             //spriteBatch.DrawString(font,
@@ -88,6 +89,7 @@ namespace BackGammonn
 
             if (clicked)
             {
+                //tekst, mis ilmub peale nupule klikkimist
                 Vector2 position = new Vector2(10, 75);
                 spriteBatch.DrawString(font,
                     clickText,

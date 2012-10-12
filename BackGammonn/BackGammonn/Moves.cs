@@ -24,5 +24,20 @@ namespace BackGammonn
             this.prevnest = _prevtnest;
             this.checker = checker;
         }
+        public Moves(Player _player, Nest _prevtnest, Jar _jar, Checker checker)
+        {
+            this.player = _player;
+            this.jar = _jar;
+            this.prevnest = _prevtnest;
+            this.checker = checker;
+        }
+
+        public Moves(Player _player, Nest _prevtnest, Prison _prison, Checker checker)
+        {
+            this.player = _player;
+            this.prison = _prison;
+            this.prevnest = _prevtnest;
+            this.checker = checker;
+        }
     }
 }

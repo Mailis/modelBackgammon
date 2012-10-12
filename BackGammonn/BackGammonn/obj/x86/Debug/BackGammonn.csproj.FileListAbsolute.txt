@@ -11,4 +11,8 @@ c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\Ba
 c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\board.xnb
 c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\button.xnb
 c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\roll.xnb
-C:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\obj\x86\Debug\BackGammonn.csprojResolveAssemblyReference.cache
+C:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\jar.xnb
+C:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\checkers\checkrBLUEinJar.xnb
+C:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\checkers\checkrREDinJar.xnb
+C:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\done.xnb
+C:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\prison.xnb

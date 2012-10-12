@@ -11,9 +11,12 @@ namespace BackGammonn
     {
         public String name { get; set; }
         public String color { get; set; }
-        public Boolean isTurnToRoll { get; set; }
+        public Boolean isTurnToRoll = false;
         public Boolean isWinner { get; set; }
-        public List<Checker> checkers = new List<Checker>(15);
+        public Boolean isOpponent { get; set; }
+        public Jar jar { get; set; }
+        public List<Checker> checkers = new List<Checker>(15); 
+        public List<Checker> checkersInHome = new List<Checker>(15);
         public List<Moves> moves = new List<Moves>();
         public int currentMoves = 0;
 
@@ -47,6 +50,47 @@ namespace BackGammonn
                 }
             }
             return foundChecker;
+        }
+
+        public void checkers_addTo_removeFrom_Home(Nest currentNest, Checker checker, List<Nest> nestList)
+        {
+            Boolean checkerInHomeArea = false;
+            if (this.isOpponent == false)
+            {
+                if (currentNest.paleyerNestID < 7)
+                {
+                    checkerInHomeArea = true;
+                }
+            }
+            else
+            {
+                if (currentNest.opponentNestID < 7)
+                {
+                    checkerInHomeArea = true;
+                }
+            }
+
+            if (checkerInHomeArea)
+            {
+                if (!this.checkersInHome.Contains(checker))
+                    this.checkersInHome.Add(checker);
+            }
+            else
+            {
+                if (this.checkersInHome.Contains(checker))
+                    this.checkersInHome.Remove(checker);
+            }
+            
+        }
+
+        public int countCheckersInHomeArea()
+        {
+            return this.checkersInHome.Count;
+        }
+
+        public Boolean allCheckersAreInHomeArea()
+        {
+            return this.checkersInHome.Count == 15;
         }
     }
 }

@@ -10,28 +10,49 @@ namespace BackGammonn
 {
     class Dice : Button
     {
-        private Boolean diceRolled = false;
-        public List<int> rolledValues = new List<int>(2);
+        public Boolean diceRolled = false;
+        public List<int> rolledValues = new List<int>(4);
+        public Boolean isDouble = false;
 
         public Dice(Texture2D texture, SpriteFont font, SpriteBatch sBatch) : base(texture, font, sBatch) { }
 
         public List<int> roll()
         {
+            this.rolledValues = new List<int>(4);
             Random random = new Random();
-            int firstRoll = random.Next(1, 7);
-            int secondRoll = random.Next(1, 7);
+            int firstRoll = random.Next(1, 7);//2;// 
+            int secondRoll =  random.Next(1, 7);//2;//
             if (this.rolledValues.Count == 0)
             {
                 this.rolledValues.Add(firstRoll);
                 this.rolledValues.Add(secondRoll);
+                if (firstRoll == secondRoll)
+                {
+                    this.rolledValues.Add(firstRoll);
+                    this.rolledValues.Add(firstRoll);
+                }
+            }
+            //else
+            //{
+            //    this.rolledValues[0] = firstRoll;
+            //    this.rolledValues[1] = secondRoll;
+            //    if (firstRoll == secondRoll)
+            //    {
+            //        this.rolledValues[2] = firstRoll;
+            //        this.rolledValues[3] = secondRoll;
+            //    }
+
+            //}
+            //double
+            if (firstRoll == secondRoll)
+            {
+                this.isDouble = true;
             }
             else
             {
-                this.rolledValues[0] = firstRoll;
-                this.rolledValues[1] = secondRoll;
-
+                this.isDouble = false;
             }
-            this.clickText = firstRoll + " " + secondRoll;
+            this.clickText = "";// firstRoll + " " + secondRoll;
             return this.rolledValues;
         }
 
@@ -70,7 +91,7 @@ namespace BackGammonn
 
             if (this.diceRolled)
             {
-                Vector2 position = new Vector2(10, 75);
+                Vector2 position = new Vector2(400, 300);
                 spriteBatch.DrawString(font,
                     clickText,
                     position,

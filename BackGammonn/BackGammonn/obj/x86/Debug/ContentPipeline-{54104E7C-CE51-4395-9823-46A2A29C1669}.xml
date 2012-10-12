@@ -7,7 +7,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\score.xnb</Output>
+      <Output>C:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\score.xnb</Output>
       <Time>2012-10-07T18:45:37.2269969+03:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\board.xnb</Output>
+      <Output>C:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\board.xnb</Output>
       <Time>2012-10-08T00:02:07.3243262+03:00</Time>
     </Item>
     <Item>
@@ -25,7 +25,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\nurk_all.xnb</Output>
+      <Output>C:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\nurk_all.xnb</Output>
       <Time>2012-10-08T00:06:35.4596626+03:00</Time>
     </Item>
     <Item>
@@ -34,7 +34,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\nurk_ylal.xnb</Output>
+      <Output>C:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\nurk_ylal.xnb</Output>
       <Time>2012-10-08T00:06:35.4676631+03:00</Time>
     </Item>
     <Item>
@@ -43,7 +43,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\checkers\checkrRED.xnb</Output>
+      <Output>C:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\checkers\checkrRED.xnb</Output>
       <Time>2012-10-09T08:44:15.2855458+03:00</Time>
     </Item>
     <Item>
@@ -52,7 +52,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\checkers\checkrBLUE.xnb</Output>
+      <Output>C:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\checkers\checkrBLUE.xnb</Output>
       <Time>2012-10-09T08:48:35.0144015+03:00</Time>
     </Item>
     <Item>
@@ -61,7 +61,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\button.xnb</Output>
+      <Output>C:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\button.xnb</Output>
       <Time>2012-10-09T23:15:32.9435344+03:00</Time>
     </Item>
     <Item>
@@ -70,8 +70,53 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\roll.xnb</Output>
+      <Output>C:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\roll.xnb</Output>
       <Time>2012-10-09T23:43:18.2967872+03:00</Time>
+    </Item>
+    <Item>
+      <Source>jar.png</Source>
+      <Name>jar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\jar.xnb</Output>
+      <Time>2012-10-11T19:49:37.7356716+03:00</Time>
+    </Item>
+    <Item>
+      <Source>checkers\checkrBLUEinJar.png</Source>
+      <Name>checkers\checkrBLUEinJar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\checkers\checkrBLUEinJar.xnb</Output>
+      <Time>2012-10-11T20:37:31.4430382+03:00</Time>
+    </Item>
+    <Item>
+      <Source>checkers\checkrREDinJar.png</Source>
+      <Name>checkers\checkrREDinJar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\checkers\checkrREDinJar.xnb</Output>
+      <Time>2012-10-11T20:37:31.4490386+03:00</Time>
+    </Item>
+    <Item>
+      <Source>done.png</Source>
+      <Name>done</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\done.xnb</Output>
+      <Time>2012-10-11T22:46:55.7361304+03:00</Time>
+    </Item>
+    <Item>
+      <Source>prison.png</Source>
+      <Name>prison</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\prison.xnb</Output>
+      <Time>2012-10-12T14:23:12.7722946+03:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -80,10 +125,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonnContent\</RootDirectory>
-      <LoggerRootDirectory>c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\</LoggerRootDirectory>
-      <IntermediateDirectory>c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>c:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonnContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

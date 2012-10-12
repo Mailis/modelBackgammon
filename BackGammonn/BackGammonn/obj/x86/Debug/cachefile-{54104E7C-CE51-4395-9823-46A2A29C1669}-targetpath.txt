@@ -6,3 +6,8 @@ Content\checkers\checkrRED.xnb
 Content\checkers\checkrBLUE.xnb
 Content\button.xnb
 Content\roll.xnb
+Content\jar.xnb
+Content\checkers\checkrBLUEinJar.xnb
+Content\checkers\checkrREDinJar.xnb
+Content\done.xnb
+Content\prison.xnb
