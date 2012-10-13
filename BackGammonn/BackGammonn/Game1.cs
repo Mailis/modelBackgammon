@@ -25,7 +25,6 @@ namespace BackGammonn
         private Texture2D imageCheckerRed { get; set; }
         private Texture2D imageCheckerBlueInJar { get; set; }
         private Texture2D imageCheckerRedInJar { get; set; }
-        private Texture2D prisonTexture { get; set; }
 
         //FONTS
         private SpriteFont font;
@@ -48,8 +47,8 @@ namespace BackGammonn
         private Texture2D gameBoardTexture;
 
         //player
-        Player pl1 = new Player("Red", "red");
-        Player pl2 = new Player("Blue", "blue");
+        Player player1 = new Player("Red", "red");
+        Player player2 = new Player("Blue", "blue");
         Player whosTurnToRoll;
 
         //announcemet: statingplayer, winner etc
@@ -73,8 +72,8 @@ namespace BackGammonn
             this.IsMouseVisible = true;
             graphics.PreferredBackBufferWidth = 1010;
             graphics.PreferredBackBufferHeight = 612;
-            pl1.isOpponent = false;
-            pl2.isOpponent = true;
+            player1.isOpponent = false;
+            player2.isOpponent = true;
         }
 
         /// <summary>
@@ -92,19 +91,19 @@ namespace BackGammonn
             {
                 if (jar.isUpper)
                 {
-                    pl2.jar = jar;
+                    player2.jar = jar;
                 }
                 else
                 {
-                    pl1.jar = jar;
+                    player1.jar = jar;
                 }
             }
             gameBoard.addPrison();
             //add initial player1 checkers into Nests
-            setInitialCheckerState(pl1, pl2);
+            setInitialCheckerState(player1, player2);
 
             //drawing of beginning player
-            whosTurnToRoll = drawingPlayer(pl1, pl2);
+            whosTurnToRoll = drawingPlayer(player1, player2);
             announcement = whosTurnToRoll.name + " has won the dice!";
             base.Initialize();
         }
@@ -129,7 +128,6 @@ namespace BackGammonn
             jarTexture = this.Content.Load<Texture2D>("jar");
             imageCheckerRedInJar = this.Content.Load<Texture2D>("checkers/checkrREDinJar");
             imageCheckerBlueInJar = this.Content.Load<Texture2D>("checkers/checkrBLUEinJar");
-            prisonTexture = this.Content.Load<Texture2D>("prison");
 
             //Font
             font = this.Content.Load<SpriteFont>("score");
@@ -197,6 +195,41 @@ namespace BackGammonn
             bool hasMoreMoves = (whosTurnToRoll.currentMoves < 2 && dice.isDouble == false) || (whosTurnToRoll.currentMoves < 4 && dice.isDouble == true);
 
             //bool doNotChangePlayers = true;
+            //kui nupp on vangis
+            Boolean nuppOnVangis = false;
+            List<Checker> playerCheckersInPrison = new List<Checker>(15);
+
+            foreach (Checker ch in whosTurnToRoll.checkers)
+            {
+                foreach (Checker chInPrison in gameBoard.prison.checkers)
+                {
+                    if (ch == chInPrison)
+                    {
+                        playerCheckersInPrison.Add(ch);
+                        nuppOnVangis = true;
+                    }
+                }
+            }
+            if (nuppOnVangis)
+            {
+                List<Nest> availableNests = new List<Nest>();
+                List<Nest> all_AvailableNests = new List<Nest>();
+                foreach (int step in dice.rolledValues)
+                {
+                    availableNests = findTargetNestsInOpponentsHome(whosTurnToRoll, step);
+                }
+                foreach (Nest stepN in availableNests)
+                {
+                    all_AvailableNests.Add(stepN);
+                }
+                //all_AvailableNests = new List<Nest>();test
+                if (nuppOnVangis && all_AvailableNests.Count == 0)
+                {
+                    //mängija jääb vahele
+                    hasMoreMoves = false;
+                }
+            }
+
 
             if (hasMoreMoves)
             {
@@ -221,17 +254,17 @@ namespace BackGammonn
                         moveCheckers(whosTurnToRoll, stepMin, mouse_x, mouse_y, nests, dice);
                     }
                     oldState_Right = newState_Right; //// this reassigns the old state so that it is ready for next time
-                    //this.doneButton.clicked = false;
+                    
                 
             }
             else
             {
                 whosTurnToRoll.currentMoves = 0;
                 //määra mängijate vahetus, ehk kelle kord on veeretada
-                if (whosTurnToRoll == pl1)
-                    whosTurnToRoll = pl2;
+                if (whosTurnToRoll == player1)
+                    whosTurnToRoll = player2;
                 else
-                    whosTurnToRoll = pl1;
+                    whosTurnToRoll = player1;
             }
              
 
@@ -289,7 +322,7 @@ namespace BackGammonn
                             spriteBatch.Draw(imageCheckerRed, ch.location, Color.White);
                     }
                 }
-                //spriteBatch.Draw(prisonTexture, gameBoard.prison.asukoht, Color.White);
+                
                 if (gameBoard.prison.numberOfCheckers() > 0)
                 {
                     foreach (Checker ch in gameBoard.prison.checkers)
@@ -447,6 +480,13 @@ namespace BackGammonn
             {
                 if (mouse_x > prison.prison_x && mouse_x < prison.rightEdge && mouse_y > prison.prison_y && mouse_y < prison.bottomEdge)
                 {
+                    if (nuppOnVangis && availableNests.Count == 0)
+                    {
+                        //mängija jääb vahele
+                        player.currentMoves = 2;
+                        dice.isDouble = false;
+                        return;
+                    }
                     if (playerCheckersInPrison.Count > 0)
                     {
                         Checker checkerInPrison = playerCheckersInPrison[0];
@@ -500,6 +540,8 @@ namespace BackGammonn
                                     player.moves.Add(playerMove);
                                 }
                             }
+
+
                     }
                 }
             }
@@ -645,7 +687,7 @@ namespace BackGammonn
 
         protected void setInitialCheckerState(Player l1, Player pl2)
         {
-            List<Checker> pl1Checkers = pl1.checkers;
+            List<Checker> pl1Checkers = player1.checkers;
             List<Checker> pl2Checkers = pl2.checkers;
 
             foreach (Nest n in gameBoard.Nests)
@@ -658,6 +700,7 @@ namespace BackGammonn
                         {
                             Checker myChecker = pl1Checkers[i];
                             n.addChecker(myChecker);
+                            l1.checkers_addTo_removeFrom_Home(n, myChecker, gameBoard.Nests);
                         }
                     }
                 }
@@ -669,6 +712,7 @@ namespace BackGammonn
                         {
                             Checker myChecker = pl1Checkers[i];
                             n.addChecker(myChecker);
+                            l1.checkers_addTo_removeFrom_Home(n, myChecker, gameBoard.Nests);
                         }
                     }
                 }
@@ -680,6 +724,7 @@ namespace BackGammonn
                         {
                             Checker myChecker = pl1Checkers[i];
                             n.addChecker(myChecker);
+                            l1.checkers_addTo_removeFrom_Home(n, myChecker, gameBoard.Nests);
                         }
                     }
                 }
@@ -691,6 +736,7 @@ namespace BackGammonn
                         {
                             Checker myChecker = pl1Checkers[i];
                             n.addChecker(myChecker);
+                            l1.checkers_addTo_removeFrom_Home(n, myChecker, gameBoard.Nests);
                         }
                     }
                 }
@@ -703,6 +749,7 @@ namespace BackGammonn
                         {
                             Checker myChecker = pl2Checkers[i];
                             n.addChecker(myChecker);
+                            pl2.checkers_addTo_removeFrom_Home(n, myChecker, gameBoard.Nests);
                         }
                     }
                 }
@@ -714,6 +761,7 @@ namespace BackGammonn
                         {
                             Checker myChecker = pl2Checkers[i];
                             n.addChecker(myChecker);
+                            pl2.checkers_addTo_removeFrom_Home(n, myChecker, gameBoard.Nests);
                         }
                     }
                 }
@@ -725,6 +773,7 @@ namespace BackGammonn
                         {
                             Checker myChecker = pl2Checkers[i];
                             n.addChecker(myChecker);
+                            pl2.checkers_addTo_removeFrom_Home(n, myChecker, gameBoard.Nests);
                         }
                     }
                 }
@@ -736,6 +785,7 @@ namespace BackGammonn
                         {
                             Checker myChecker = pl2Checkers[i];
                             n.addChecker(myChecker);
+                            pl2.checkers_addTo_removeFrom_Home(n, myChecker, gameBoard.Nests);
                         }
                     }
                 }

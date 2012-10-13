@@ -10,4 +10,3 @@ Content\jar.xnb
 Content\checkers\checkrBLUEinJar.xnb
 Content\checkers\checkrREDinJar.xnb
 Content\done.xnb
-Content\prison.xnb

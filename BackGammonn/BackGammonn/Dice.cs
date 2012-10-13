@@ -21,7 +21,7 @@ namespace BackGammonn
             this.rolledValues = new List<int>(4);
             Random random = new Random();
             int firstRoll = random.Next(1, 7);//2;// 
-            int secondRoll =  random.Next(1, 7);//2;//
+            int secondRoll = random.Next(1, 7);//2;//
             if (this.rolledValues.Count == 0)
             {
                 this.rolledValues.Add(firstRoll);

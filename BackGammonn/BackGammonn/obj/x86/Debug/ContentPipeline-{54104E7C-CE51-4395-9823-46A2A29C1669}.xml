@@ -109,15 +109,6 @@
       <Output>C:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\done.xnb</Output>
       <Time>2012-10-11T22:46:55.7361304+03:00</Time>
     </Item>
-    <Item>
-      <Source>prison.png</Source>
-      <Name>prison</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Mailis\Documents\Visual Studio 2010\Projects\BackGammonn\BackGammonn\BackGammonn\bin\x86\Debug\Content\prison.xnb</Output>
-      <Time>2012-10-12T14:23:12.7722946+03:00</Time>
-    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{54104E7C-CE51-4395-9823-46A2A29C1669}</ContentProjectGUID>

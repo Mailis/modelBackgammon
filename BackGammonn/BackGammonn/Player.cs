@@ -57,14 +57,14 @@ namespace BackGammonn
             Boolean checkerInHomeArea = false;
             if (this.isOpponent == false)
             {
-                if (currentNest.paleyerNestID < 7)
+                if (currentNest.opponentNestID < 7)
                 {
                     checkerInHomeArea = true;
                 }
             }
             else
             {
-                if (currentNest.opponentNestID < 7)
+                if (currentNest.paleyerNestID < 7)
                 {
                     checkerInHomeArea = true;
                 }
